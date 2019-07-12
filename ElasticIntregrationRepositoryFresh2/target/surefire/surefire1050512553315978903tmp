@@ -1,0 +1,6 @@
+#surefire
+#Wed Jul 03 17:05:15 BDT 2019
+maven.ext.class.path=C\:\\Program Files\\NetBeans 8.2\\java\\maven-nblib\\netbeans-eventspy.jar
+user.dir=D\:\\PROJECTS\\NetBeansProjects\\ElasticSearch\\ElasticIntregration2
+localRepository=D\:\\.m2\\repository
+basedir=D\:\\PROJECTS\\NetBeansProjects\\ElasticSearch\\ElasticIntregration2

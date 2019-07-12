@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="5" failures="0" name="com.baeldung.elasticsearch.ElasticSearchManualTest" time="152.974" errors="5" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_151\jre\bin"/>
+    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="test" value="com.baeldung.elasticsearch.ElasticSearchManualTest"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\PROJECTS\NetBeansProjects\ElasticSearch\ElasticIntregration2"/>
+    <property name="java.runtime.version" value="1.8.0_151-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_151\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Raju\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\NetBeans 8.2\java\maven\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_151\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Raju\Downloads\WINDOWS.X64_180000_db_home\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Git\cmd;C:\PostgreSQL\pg10\bin;C:\xampp\mysql\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Program Files\nodejs\node_modules\npm\bin;C:\Program Files (x86)\VideoLAN\VLC;C:\Program Files (x86)\curl-7.61.0-win32-mingw\bin;C:\Program Files (x86)\ffmpeg-20180809-eb1860e-win64-static\bin;C:\Program Files (x86)\mplayer-svn-38109;C:\Program Files\NetBeans 8.2\java\maven\bin;D:\UsefulDlls;C:\Program Files (x86)\Futronic\SDK 4.2\Bin\x64;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Neurotechnology\Neurotec Biometric 10.0 SDK Trial\Bin\Win64_x64;C:\EDSDK_64;C:\EF45;C:\Users\Raju\Documents\NetBeansProjects\enrollSUbjectProjectAll\FingerprintSeg\dll;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;C:\Program Files (x86)\Canon\EOS Utility;D:\C DRIVE\PostgreSQL\11\bin;D:\C DRIVE\PostgreSQL\11\lib;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;D:\PROJECTS\All Project Necessary Things\UNODC\idfy\native\nfiqnative;D:\PROJECTS\All Project Necessary Things\UNODC\idfy\native\x64;D:\PROJECTS\All Project Necessary Things\UNODC\idfy\native;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\3M Cogent\3MCogent-CSD200\bin\;D:\C DRIVE\Matlab2018b\runtime\win64;D:\C DRIVE\Matlab2018b\bin;D:\C DRIVE\MatLab\runtime\win64;D:\C DRIVE\MatLab\bin;C:\opencv\build\java\x64;D:\C DRIVE\opencv2.4.9\build\java\x64;;D:\C DRIVE\Anaconda3;D:\C DRIVE\Anaconda3\Library\mingw-w64\bin;D:\C DRIVE\Anaconda3\Library\usr\bin;D:\C DRIVE\Anaconda3\Library\bin;D:\C DRIVE\Anaconda3\Scripts;C:\Users\Raju\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Raju\AppData\Local\Programs\Python\Python37\;C:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;C:\Users\Raju\AppData\Local\Microsoft\WindowsApps;C:\Users\Raju\AppData\Roaming\npm;C:\Users\Raju\Downloads\Webcame\opencv\build\bin;C:\Users\Raju\Downloads\Webcame\opencv\build\x64\vc14\bin;C:\Program Files\CMake\bin\;C:\Program Files\heroku\bin;D:\PROJECTS\All Project Necessary Things\UNODC\idfy\native\nfiqnative;D:\PROJECTS\All Project Necessary Things\UNODC\idfy\native\x64;D:\PROJECTS\All Project Necessary Things\UNODC\idfy\native;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\3M Cogent\3MCogent-CSD200\bin\;D:\C DRIVE\Matlab2018b\runtime\win64;D:\C DRIVE\Matlab2018b\bin;D:\C DRIVE\MatLab\runtime\win64;D:\C DRIVE\MatLab\bin;C:\opencv\build\java\x64;D:\C DRIVE\opencv2.4.9\build\java\x64;;;D:\C DRIVE\PyCharm Edu 2019.1.1\bin;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Raju"/>
+    <property name="user.timezone" value="Asia/Dhaka"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Raju"/>
+    <property name="java.class.path" value="C:\Program Files\NetBeans 8.2\java\maven\boot\plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_151\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=com.baeldung.elasticsearch.ElasticSearchManualTest -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar surefire:test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_151"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_151\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_151\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_151\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\NetBeans 8.2\java\maven"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.baeldung.elasticsearch.ElasticSearchManualTest" name="givenDocumentId_whenJavaObject_thenDeleteDocument" time="32.727">
+    <error message="None of the configured nodes are available: [{#transport#-1}{C-D73bd_TluMPiqzEEev-w}{127.0.0.1}{127.0.0.1:9200}]" type="NoNodeAvailableException[None of the configured nodes are available">NoNodeAvailableException[None of the configured nodes are available: [{#transport#-1}{C-D73bd_TluMPiqzEEev-w}{127.0.0.1}{127.0.0.1:9200}]]
+	at org.elasticsearch.client.transport.TransportClientNodesService.ensureNodesAreAvailable(TransportClientNodesService.java:347)
+	at org.elasticsearch.client.transport.TransportClientNodesService.execute(TransportClientNodesService.java:245)
+	at org.elasticsearch.client.transport.TransportProxyClient.execute(TransportProxyClient.java:59)
+	at org.elasticsearch.client.transport.TransportClient.doExecute(TransportClient.java:363)
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:408)
+	at org.elasticsearch.action.ActionRequestBuilder.execute(ActionRequestBuilder.java:80)
+	at org.elasticsearch.action.ActionRequestBuilder.execute(ActionRequestBuilder.java:54)
+	at org.elasticsearch.action.ActionRequestBuilder.get(ActionRequestBuilder.java:62)
+	at com.baeldung.elasticsearch.ElasticSearchManualTest.givenDocumentId_whenJavaObject_thenDeleteDocument(ElasticSearchManualTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</error>
+    <system-err>ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console. Set system property &apos;log4j2.debug&apos; to show Log4j2 internal initialization logging.
+</system-err>
+  </testcase>
+  <testcase classname="com.baeldung.elasticsearch.ElasticSearchManualTest" name="givenSearchParameters_thenReturnResults" time="30.048">
+    <error message="None of the configured nodes are available: [{#transport#-1}{itInP_CvQuinZv1ApVIRRg}{127.0.0.1}{127.0.0.1:9200}]" type="NoNodeAvailableException[None of the configured nodes are available">NoNodeAvailableException[None of the configured nodes are available: [{#transport#-1}{itInP_CvQuinZv1ApVIRRg}{127.0.0.1}{127.0.0.1:9200}]]
+	at org.elasticsearch.client.transport.TransportClientNodesService.ensureNodesAreAvailable(TransportClientNodesService.java:347)
+	at org.elasticsearch.client.transport.TransportClientNodesService.execute(TransportClientNodesService.java:245)
+	at org.elasticsearch.client.transport.TransportProxyClient.execute(TransportProxyClient.java:59)
+	at org.elasticsearch.client.transport.TransportClient.doExecute(TransportClient.java:363)
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:408)
+	at org.elasticsearch.action.ActionRequestBuilder.execute(ActionRequestBuilder.java:80)
+	at org.elasticsearch.action.ActionRequestBuilder.execute(ActionRequestBuilder.java:54)
+	at com.baeldung.elasticsearch.ElasticSearchManualTest.givenSearchParameters_thenReturnResults(ElasticSearchManualTest.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</error>
+  </testcase>
+  <testcase classname="com.baeldung.elasticsearch.ElasticSearchManualTest" name="givenSearchRequest_whenMatchAll_thenReturnAllResults" time="30.038">
+    <error message="None of the configured nodes are available: [{#transport#-1}{5kOQA4saRSyB5EVDGXlqAg}{127.0.0.1}{127.0.0.1:9200}]" type="NoNodeAvailableException[None of the configured nodes are available">NoNodeAvailableException[None of the configured nodes are available: [{#transport#-1}{5kOQA4saRSyB5EVDGXlqAg}{127.0.0.1}{127.0.0.1:9200}]]
+	at org.elasticsearch.client.transport.TransportClientNodesService.ensureNodesAreAvailable(TransportClientNodesService.java:347)
+	at org.elasticsearch.client.transport.TransportClientNodesService.execute(TransportClientNodesService.java:245)
+	at org.elasticsearch.client.transport.TransportProxyClient.execute(TransportProxyClient.java:59)
+	at org.elasticsearch.client.transport.TransportClient.doExecute(TransportClient.java:363)
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:408)
+	at org.elasticsearch.action.ActionRequestBuilder.execute(ActionRequestBuilder.java:80)
+	at org.elasticsearch.action.ActionRequestBuilder.execute(ActionRequestBuilder.java:54)
+	at com.baeldung.elasticsearch.ElasticSearchManualTest.givenSearchRequest_whenMatchAll_thenReturnAllResults(ElasticSearchManualTest.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</error>
+  </testcase>
+  <testcase classname="com.baeldung.elasticsearch.ElasticSearchManualTest" name="givenJsonString_whenJavaObject_thenIndexDocument" time="30.033">
+    <error message="None of the configured nodes are available: [{#transport#-1}{e4OF51dQTAe8SB9YHrvKHg}{127.0.0.1}{127.0.0.1:9200}]" type="NoNodeAvailableException[None of the configured nodes are available">NoNodeAvailableException[None of the configured nodes are available: [{#transport#-1}{e4OF51dQTAe8SB9YHrvKHg}{127.0.0.1}{127.0.0.1:9200}]]
+	at org.elasticsearch.client.transport.TransportClientNodesService.ensureNodesAreAvailable(TransportClientNodesService.java:347)
+	at org.elasticsearch.client.transport.TransportClientNodesService.execute(TransportClientNodesService.java:245)
+	at org.elasticsearch.client.transport.TransportProxyClient.execute(TransportProxyClient.java:59)
+	at org.elasticsearch.client.transport.TransportClient.doExecute(TransportClient.java:363)
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:408)
+	at org.elasticsearch.action.ActionRequestBuilder.execute(ActionRequestBuilder.java:80)
+	at org.elasticsearch.action.ActionRequestBuilder.execute(ActionRequestBuilder.java:54)
+	at org.elasticsearch.action.ActionRequestBuilder.get(ActionRequestBuilder.java:62)
+	at com.baeldung.elasticsearch.ElasticSearchManualTest.givenJsonString_whenJavaObject_thenIndexDocument(ElasticSearchManualTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</error>
+  </testcase>
+  <testcase classname="com.baeldung.elasticsearch.ElasticSearchManualTest" name="givenContentBuilder_whenHelpers_thanIndexJson" time="30.06">
+    <error message="None of the configured nodes are available: [{#transport#-1}{AmpWinbhRu-KBvyDQoIYkA}{127.0.0.1}{127.0.0.1:9200}]" type="NoNodeAvailableException[None of the configured nodes are available">NoNodeAvailableException[None of the configured nodes are available: [{#transport#-1}{AmpWinbhRu-KBvyDQoIYkA}{127.0.0.1}{127.0.0.1:9200}]]
+	at org.elasticsearch.client.transport.TransportClientNodesService.ensureNodesAreAvailable(TransportClientNodesService.java:347)
+	at org.elasticsearch.client.transport.TransportClientNodesService.execute(TransportClientNodesService.java:245)
+	at org.elasticsearch.client.transport.TransportProxyClient.execute(TransportProxyClient.java:59)
+	at org.elasticsearch.client.transport.TransportClient.doExecute(TransportClient.java:363)
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:408)
+	at org.elasticsearch.action.ActionRequestBuilder.execute(ActionRequestBuilder.java:80)
+	at org.elasticsearch.action.ActionRequestBuilder.execute(ActionRequestBuilder.java:54)
+	at org.elasticsearch.action.ActionRequestBuilder.get(ActionRequestBuilder.java:62)
+	at com.baeldung.elasticsearch.ElasticSearchManualTest.givenContentBuilder_whenHelpers_thanIndexJson(ElasticSearchManualTest.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</error>
+  </testcase>
+</testsuite>
